@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+html {
+    font-size: 16px;
+
+}
+
+html,
+body,
+nav,
+header,
+aside,
+main,
+footer,
+article,
+div,
+section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(95, 67, 36);
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1{
+    margin-bottom:30px;
+}
+
+header {
+    font-family:'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    color: rgb(197, 28, 22);
+    background-color: rgba(244, 195, 135, 0.61);
+    text-shadow: 2px 2px 6px rgb(224, 140, 140);
+    padding: 0.2em;
+
+}
+
+main {
+    max-width:1000px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    font-size:medium;
+    padding: 0.4em;
+     margin-top:0.3em;
+     
+    }
+
+nav ul li {
+    display: inline-block;
+    margin: auto;  
+}
+
+nav a {
+color: rgb(71, 41, 2);
+ font-weight: bold;
+ text-shadow: none;
+ font-size: larger;
+ text-decoration:none;
+}
+
+nav a:hover {
+    color: rgba(196, 99, 2, 0.82);
+    text-decoration:none;
+}
+
+
+.localnav ul{
+    display:flex;
+    flex-wrap: wrap;
+    font-size: small;
+     background-color: rgba(244, 195, 135, 0.247);
+
+}
+
+.localnav ul li {
+    border-radius: 6px;
+    padding:2px 2px;
+
+}
+
+body#sortiment .localnav{
+    display: block;
+    
+}
+
+footer {
+    padding:0.3em;
+     font-family:'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: rgb(197, 28, 22);
+    background-color: rgba(244, 195, 135, 0.297);
+    
+}
+
+.menuSlider{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.pizza{
+    display:none;
+    padding:30px;
+    text-align: center;
+   
+    border:3px solid #5a3e1b;
+    box-shadow:0 8px 15px rgba(0,0,0,0.3);    
+}
+.pizza.active{
+    display:block;
+}
+h2{
+    text-align: center;
+}
+.price{
+    text-align:center;
+    font-weight: bold;
+}
+ul{
+    margin-top: 20px;
+}
+li{
+    margin-bottom: 8px;
+}
