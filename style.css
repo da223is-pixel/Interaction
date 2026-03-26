@@ -18,201 +18,285 @@ section {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- 
+
 }
 
 body {
     background-color: rgb(255, 255, 255);
-    color: rgb(95, 67, 36);
+    color: rgb(0, 0, 0);
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    min-height:100vh;
+    
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.9)),
+         url("pizzor.jpg");
+    background-attachment: fixed;
+
+    background-repeat:cover;
+    background-position:center;
+    background-size:1000px;
+    min-height: 100vh;
 }
 
-main{
-    flex:1;
+main {
+    flex: 1;
+
+
 }
 
-header h1{
-    margin-bottom:30px;
+header h1 {
+    margin-bottom: 30px;
+
 }
 
 header {
-    font-family:'Arial Narrow Bold', sans-serif;
+    font-family: 'Arial Narrow Bold', sans-serif;
     text-align: center;
     font-size: 20px;
     color: rgb(152, 17, 13);
-    background-color: rgb(254, 228, 194);;
+    background-color: rgb(255, 221, 176);
     text-shadow: 2px 2px 6px rgb(224, 140, 140);
     padding: 0.2em;
 
 }
 
 main {
-    max-width:1000px;
+    max-width: 1000px;
     margin: 0 auto;
+    background-color: transparent;
 }
 
 nav ul {
     display: flex;
-    font-size:medium;
-    padding: 0.4em;
-     margin-top:0.3em;
-     
-    }
+    font-size: medium;
+    padding: 0.5em;
+    margin-top: 0.2em;
+
+
+}
 
 nav ul li {
     display: inline-block;
-    margin: auto;  
+    margin: auto;
 }
 
 nav a {
-color: rgb(71, 41, 2);
- font-weight: bold;
- text-shadow: none;
- font-size: larger;
- text-decoration:none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-shadow: none;
+    font-size: larger;
+    text-decoration: none;
 }
 
 nav a:hover {
     color: rgba(196, 99, 2, 0.82);
-    text-decoration:none;
+    text-decoration: none;
 }
 
 
-.localnav ul{
-    display:flex;
+.localnav ul {
+    display: flex;
     flex-wrap: wrap;
     font-size: small;
-     background-color: rgba(244, 195, 135, 0.247);
+    background-color: rgb(254, 231, 200);
 
 }
 
 .localnav ul li {
     border-radius: 6px;
-    padding:2px 2px;
+    padding: 2px 2px;
 
 }
 
-body#sortiment .localnav{
+body#sortiment .localnav {
     display: block;
-    
+
 }
 
 footer {
-    padding:1em;
+    padding: 1em;
     font-weight: bold;
-    font-family:'Arial Narrow', Arial, sans-serif;
+    font-family: 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    color: rgb(168, 16, 11);
-    background-color: rgb(253, 244, 232);
-   
+    color: rgb(144, 15, 10);
+    background-color: rgb(254, 241, 226);
+
 }
 
 
-.menuSlider{
+.menuSlider {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+
 }
 
-.pizza{
-    display:none;
-    padding:15px;
+.pizza {
+    display: none;
+    padding: 8px;
     text-align: center;
-    border:3px solid #5a3e1b;
-    box-shadow:0 8px 15px rgba(0,0,0,0.3);  
-    margin-bottom:40px;
+    border: 3px solid #5a3e1b;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
     margin-top: 40px;
-    font-family:sans-serif;
-    
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+
 }
-.pizza.active{
-    display:block;
+
+#hem {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-family: sans-serif;
 }
-h2{
+
+.pizza.active {
+    display: block;
+}
+.button {
+    background-color: #07cb21a7;
+}
+
+h2 {
     text-align: center;
 }
-.price{
-    text-align:center;
+
+.price {
+    text-align: center;
     font-weight: bold;
 }
-ul{
+
+ul {
     margin-top: 20px;
 }
-li{
+
+li {
     margin-bottom: 8px;
 }
 
-nav a.active{
+nav a.active {
     color: black;
-     font-family:Helvetica, sans-serif;
-    text-shadow:0 8px 15px rgba(0,0,0,0.3); ;
-    border-bottom:2px solid rgb(177, 20, 20) ;
+    font-family: Helvetica, sans-serif;
+    text-shadow: 0ch 1px 3px rgba(18, 1, 1, 0.29);
+    border-bottom:2px solid rgba(90,62,27);
+    text-align: center;
+
 }
-button{
-    height:30px;
+
+button {
+    height: 30px;
     width: 30px;
     border: 2px solid #5a3e1b;
     margin-left: 2px;
-    margin-right: 2px
-}
-
-@media (max-width:800px){
- .localnav ul{
-    display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   padding:0 10px;
- }
- .localnav li{
-    width:32%;
-    text-align: center;
-    margin-bottom:10px;
- }
-}
-
-@media(max-width:600px){
-.menuSlider{
-padding:0 20px;
-}
-.localnav li{
-    margin:4px 0;
- }
+    margin-right: 2px;
+    cursor: pointer;
+    border-radius:3px;
 }
 
 
-@media(max-width:500px){
-.menuSlider{
-padding:0 5px;
-}
-.pizza{
-   font-size:12px; 
-}
- .localnav ul{
-    display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   padding:0 5px;
-   font-size: small;
- }
 
-header h1{
-    font-size: 25px;
-}
-nav ul{
-    font-size: small;
-}
-footer{
-    font-size: small;
-   
-}}
-@media(max-width:450px){
-.localnav ul{
-    font-size:10px;
-}
+@media (max-width:800px) {
+    #hem {
+        font-size: 14px;
+        padding: 30px;
+    }
+
+    .body {
+        background-size: 150px;
+        background-attachment: scroll;
+    }
+
+    .localnav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .localnav li {
+        width: 32%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
 
+@media(max-width:600px) {
+    #hem {
+        font-size: 12px;
+        padding: 20px;
+    }
+
+    .body {
+        background-size: 120px;
+        background-attachment: scroll;
+    }
+
+    .menuSlider {
+        padding: 0 20px;
+    }
+
+    .localnav li {
+        margin: 4px 0;
+    }
+}
+
+
+@media(max-width:500px) {
+    #hem {
+        font-size: 12px;
+        padding: 20px;
+    }
+
+    .body {
+        background-size: 80px;
+        background-attachment: scroll;
+    }
+
+    .menuSlider {
+        padding: 0 5px;
+    }
+
+    .pizza {
+        font-size: 12px;
+    }
+
+    .localnav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 5px;
+        font-size: small;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav ul {
+        font-size: small;
+    }
+
+    footer {
+        font-size: small;
+
+    }
+}
+
+@media(max-width:450px) {
+    #hem {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .localnav ul {
+        font-size: 10px;
+    }
+}
